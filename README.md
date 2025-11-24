@@ -1,7 +1,6 @@
 # VL.RoboSharp
 
-![NuGet Version](https://img.shields.io/nuget/vpre/VL.RoboSharp?style=for-the-badge&link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FVL.RoboSharp%2F)
-
+[![NuGet Version](https://img.shields.io/nuget/vpre/VL.RoboSharp?style=for-the-badge)](https://www.nuget.org/packages/VL.RoboSharp/)
 
 Wraps the excellent [RoboSharp](https://github.com/PCAssistSoftware/RoboSharp/tree/bbe6e7f7290d4b351d45070b452612e294741e4e) library to let you use Robocopy programmatically in your patches.
 
