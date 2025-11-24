@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="VRhjfmQ8yHwLPTbM3ve8vO" LanguageVersion="2025.7.1-0106-gc0edd1f65b" Version="0.128">
+  <NugetDependency Id="JnLLU4P5SNuMWplXqd9BRc" Location="VL.CoreLib" Version="2025.7.1-0106-gc0edd1f65b" />
+  <Patch Id="O5he0HVZvYSQJD6jBtpUGG">
+    <Canvas Id="SW8zsfjAHu9NZNdg5Vscks" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Px4GfVCxbZONUVTIBaXUsK">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JX52El9h8ZcM29M6CeqU8H">
+        <Canvas Id="EM3on9QoyjtMw1R4pbTM42" CanvasType="Group">
+          <Node Bounds="112,425,265,19" Id="Va3XTZB57guLleI93ad8QV">
+            <p:NodeReference LastCategoryFullName="RoboSharp" LastDependency="VL.RoboSharp.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="RoboSharp" />
+              <Choice Kind="ProcessAppFlag" Name="Robocopy" />
+            </p:NodeReference>
+            <Pin Id="K03I2J6u6DcNP6uVLaGxS9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DBKgLhX9s3iQAcLhqGzCAb" Name="Source" Kind="InputPin" />
+            <Pin Id="BOl1vQai3CmN7WCt0CPwf2" Name="Destination" Kind="InputPin" />
+            <Pin Id="Q4RBGnsayaqNgAXHfgu3Xg" Name="Copy Subdirectories" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="KSg5cgfgKHCPDI0zLsUX1y" Name="Mirror" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="B14HqJCUwhvOTcp8djv0nf" Name="Use Unbuffered IO" Kind="InputPin" />
+            <Pin Id="LWP9wqy1SqZOpC1UvBxfAd" Name="Exclude Files" Kind="InputPin" />
+            <Pin Id="PszWiYeySqDQX11K4qiggn" Name="Exclude Directories" Kind="InputPin" />
+            <Pin Id="ACf1YGRcqCzOwhAHrbFbUU" Name="Retry Count" Kind="InputPin" />
+            <Pin Id="QFjriMp7sBbOliz2aKMrdJ" Name="Retry Wait Time" Kind="InputPin" />
+            <Pin Id="GPSoJs5h7dSQH55wmkCzwW" Name="Multithreaded Copies Count" Kind="InputPin" />
+            <Pin Id="TYFdhrv4rplPyjQog6vNnr" Name="Domain" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JB53Oe5iussLQVmOoWhizK" Name="Username" Kind="InputPin" />
+            <Pin Id="J5RCOvDfKiGOnEGymyFXIG" Name="Password" Kind="InputPin" />
+            <Pin Id="RF7nVS7s4O1LUuie6dg5Ma" Name="Start" Kind="InputPin" />
+            <Pin Id="FGn4HHF4CDQN95dl1JVdnX" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HQ50rlkgpZ3Mg7zsXYmVt1" Name="File Processed" Kind="OutputPin" />
+            <Pin Id="MeUNyy4ACQgL0Pe2xvEhFg" Name="On Command Completed" Kind="OutputPin" />
+            <Pin Id="EqX1h0nEE0JPv7H8TmHolA" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="HKP7xInMT6kPGGCsft63Uj" Name="Stop" Kind="InputPin" />
+            <Pin Id="JYufyeq6KQtPalUo0MEXq0" Name="Command" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GOW6LjGBb2QMMHMbUz5peJ" Comment="Source" Bounds="114,120,232,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\somewhere\over\the\rainbow\">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:pathtype p:Assembly="VL.Core" p:Type="VL.Core.PathType">Directory</p:pathtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="112,140,55,19" Id="C81EzsVCwdJMHkx67tGUbS">
+            <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToString" />
+            </p:NodeReference>
+            <Pin Id="HXWbn8BsQS3MqAFirjAmIo" Name="Input" Kind="InputPin" />
+            <Pin Id="JPjchuBFrVlO61XHbKx7kQ" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PSaLWPSlQYhPb4pBckRsZR" Comment="Retry Count" Bounds="254,317,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="D75znZ94R9HQBxWHr7HbX5" Comment="Retry Wait Time" Bounds="274,341,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Etv14n0ujRtN3jX5cY69qb" Comment="Multithreaded Copies Count" Bounds="294,365,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="C1CAQCvbWlgPIrckQ65dQu" Comment="Start" Bounds="354,390,35,15" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RvZHGd9SKatLBLIp6EEmCq" Comment="In Progress" Bounds="287,581,35,15" ShowValueBox="true" isIOBox="true" Value="True" />
+          <Pad Id="ToqSZXTSlboP5RSHhE5vYD" Comment="Stop" Bounds="374,410,35,15" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="H0nsvxJmd5JORpPDfHQWD0" Comment="Destination" Bounds="134,191,264,15" ShowValueBox="true" isIOBox="true" Value="\\10.23.104.120\network_share_name\some\folder\">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BvXwSRM489uMlLvUnafyCx" Comment="Command" Bounds="374,495,253,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="H8hySoeuM2VOxQ1PLl5tcb" Bounds="374,518,163,32" ShowValueBox="true" isIOBox="true" Value="You can preview the actual robocopy arguments here">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="BuSqACGum95NVid2dMwMhM" Name="" Bounds="347,431,359,91" />
+          <Pad Id="C3zbylagEd3O80Y0PpkNgY" Bounds="134,214,257,16" ShowValueBox="true" isIOBox="true" Value="Can be a network folder! Must end with a backslash">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NpKnQeORaLjNADhT7oGs3m" Comment="Copy Subdirectories" Bounds="154,262,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Lq2Bb4KcmbrPRmoNS03Ubz" Comment="Mirror" Bounds="174,286,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DDkHxhbskTnPpqYnnZQF5v" Bounds="544,191,341,117" ShowValueBox="true" isIOBox="true" Value="robocopy is a built-in file transfer utility on Windows computers. There's nothing to install, it's already there on your system.&#xD;&#xA;This nuget wraps the vvvvery cool RoboSharp C# library so that you can use robocopy programatically in your patches!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Vs18CqruUjDOAwna5hiGiB" Name="" Bounds="531,164,379,151">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+        </Canvas>
+        <Patch Id="EGdVcFSw09zLhs4lce2lJz" Name="Create" />
+        <Patch Id="LNA6woSjLU6LxptBZmFEop" Name="Update" />
+        <ProcessDefinition Id="MHn64FOqZ1YNHEzVGNjrng">
+          <Fragment Id="DgDFraac00iN2cSZhH86ie" Patch="EGdVcFSw09zLhs4lce2lJz" Enabled="true" />
+          <Fragment Id="NbLmDe6EQz0OwvlXkh5P32" Patch="LNA6woSjLU6LxptBZmFEop" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="TxoxaqS4xOHMRRNpl2Gn8O" Ids="GOW6LjGBb2QMMHMbUz5peJ,HXWbn8BsQS3MqAFirjAmIo" />
+        <Link Id="OtkXxC4tPjANsf40DUItjt" Ids="JPjchuBFrVlO61XHbKx7kQ,DBKgLhX9s3iQAcLhqGzCAb" />
+        <Link Id="ROLWZM9NI51MKr32UfdCIs" Ids="PSaLWPSlQYhPb4pBckRsZR,ACf1YGRcqCzOwhAHrbFbUU" />
+        <Link Id="Oz3ttNjaPbILPjqXe9qLzY" Ids="D75znZ94R9HQBxWHr7HbX5,QFjriMp7sBbOliz2aKMrdJ" />
+        <Link Id="OSY7RFt0IYINy5SJpAVANg" Ids="Etv14n0ujRtN3jX5cY69qb,GPSoJs5h7dSQH55wmkCzwW" />
+        <Link Id="ACgZUZVgF33LxxhRBS61bH" Ids="C1CAQCvbWlgPIrckQ65dQu,RF7nVS7s4O1LUuie6dg5Ma" />
+        <Link Id="QzI71Oun0HcLxPG38rC3n2" Ids="EqX1h0nEE0JPv7H8TmHolA,RvZHGd9SKatLBLIp6EEmCq" />
+        <Link Id="KXmyTfLVnPkQHatxc2jNhd" Ids="ToqSZXTSlboP5RSHhE5vYD,HKP7xInMT6kPGGCsft63Uj" />
+        <Link Id="M7E3FL7xFG3Mtczi9ghuLA" Ids="H0nsvxJmd5JORpPDfHQWD0,BOl1vQai3CmN7WCt0CPwf2" />
+        <Link Id="H5MzGAsNKkRNqZjcd8PpqB" Ids="JYufyeq6KQtPalUo0MEXq0,BvXwSRM489uMlLvUnafyCx" />
+        <Link Id="BoVmX2ya8MeQc0ptqWXMIN" Ids="NpKnQeORaLjNADhT7oGs3m,Q4RBGnsayaqNgAXHfgu3Xg" />
+        <Link Id="NCLMJ9OsfwROeE9kM93CTY" Ids="Lq2Bb4KcmbrPRmoNS03Ubz,KSg5cgfgKHCPDI0zLsUX1y" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="B6hfxMlY4W9Lixrbrx2vqS" Location="VL.RoboSharp" Version="0.0.0" />
+</Document>

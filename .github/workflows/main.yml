@@ -1,0 +1,26 @@
+name: push_nuget
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish'
+        required: false
+        default: '0.0.0'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Git Checkout
+      uses: actions/checkout@master
+    
+    - name: Setup Nuget.exe
+      uses: nuget/setup-nuget@v2.0.0
+
+    - name: Publish VL Nuget
+      uses: vvvv/PublishVLNuget@1.0.46
+      with:
+        nuspec: deployment\VL.RoboSharp.nuspec
+        version: ${{ github.event.inputs.version }}
+        nuget-key: ${{ secrets.NUGET_KEY }}

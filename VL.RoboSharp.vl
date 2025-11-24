@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="IMt6N4EWPh3MoJZ1ULqblc" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="A0OoKUcFYR5NHQ6LXkYqlL" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="R5CVJx7gYz6M6fMFs5hPIs">
+    <Canvas Id="VITthTIkg57Op6saMcKCPM" DefaultCategory="RoboSharp" CanvasType="FullCategory">
+      <!--
+
+    ************************ Robocopy ************************
+
+-->
+      <Node Name="Robocopy" Aspects="Internal" Bounds="368,291" Id="VEI4VChvp58OmqGtKwXhQJ">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" />
+        </p:NodeReference>
+        <Patch Id="ODEcXTEJk3MO2fwBsJJqx0">
+          <Canvas Id="K5cOaZmxsJxOmABg6s3c2u" CanvasType="Group">
+            <Node Bounds="152,0,71,26" Id="KqK54RBrBRJOzmuAbWOJLt">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="MncbkMHS2bBQbtBvoplRHE" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="I8bNTWUwtNuQI4ijPObXRN" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="154,580" />
+            <Node Bounds="420,231,90,26" Id="IcumHwcwmwSOw7avfU8y2S">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="OnFileProcessed" />
+              </p:NodeReference>
+              <Pin Id="QhsTX8jGqUDLBjKPHpm6Fz" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EnUDNN0T00ePK3LXbzzor4" Name="State Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="S6osjcShbKfOsDaIITBrUs" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="800,231,125,26" Id="QdLk6OFT6goNTkjcQ5zNO5">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="OnCommandCompleted" />
+              </p:NodeReference>
+              <Pin Id="NhYV2GGNw22OSa7mZLUmT6" Name="Input" Kind="StateInputPin" />
+              <Pin Id="R1R3JGEf22MPGQpQywLJiM" Name="State Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="BXZqCcLBMi6O8WfcoAY2rW" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="420,301,313,266" Id="IcjQgUPRrTUOC2RACbUx0K">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="SAENMOZ92lZNB6Rehb5v1p" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="LaPV1SyivUlOTd3xYCgr3H" Name="Messages" Kind="InputPin" />
+              <Pin Id="Fq9Vw1TPVmpN2Ul5aTTN16" Name="Reset" Kind="InputPin" />
+              <Pin Id="BlIbxoPFYqzQSAd7Cq2v90" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="RDkgVXDg0tAMlfjNjYWVBa" Name="Result" Kind="OutputPin" />
+              <Patch Id="QY843c2lTa0PsNArD6Tpbd" ManuallySortedPins="true">
+                <Patch Id="HZXnRqxvMQdMobAm2iKrxA" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MUBgmcgdDNCNn4L69urufc" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="VRwEdHrf5uhQVBbdORzE1x" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="NIIlqJ5fGfvO57LA3fK0TJ" Name="Output" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="EiXHkn3rcyLLJSs7bVPAnD" Bounds="434,309" />
+                <ControlPoint Id="PpK5Lbt3cYKLAFbiEAnVsB" Bounds="602,560" />
+                <Node Bounds="432,331,62,26" Id="F8XsxvHgs0tLVVsVu5GPOR">
+                  <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="EventPattern" />
+                    <Choice Kind="OperationCallFlag" Name="EventArgs" />
+                  </p:NodeReference>
+                  <Pin Id="PS3eYkGJSWNPAWdgHo3LL2" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="O19pzoD9Vm6NP61IhqXFfR" Name="Event Args" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="432,381,100,26" Id="FVlOmgR2tj4MVXhRyD38dy">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.FileProcessedEventArgs" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="FileProcessedEventArgs" />
+                    <Choice Kind="OperationCallFlag" Name="ProcessedFile" />
+                  </p:NodeReference>
+                  <Pin Id="JDRfrDoyftcQZ6p5cL75Is" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Oc5wuBibE8LOTjtVInXMlN" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LpSXkETHlf6OnNfBBwz57f" Name="Processed File" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="527,420,78,26" Id="HUZePgoy8jqOTqE7Ob1mpP">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.ProcessedFileInfo" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ProcessedFileInfo" />
+                    <Choice Kind="OperationCallFlag" Name="Name" />
+                  </p:NodeReference>
+                  <Pin Id="AdCSPjkWOtzLWqBhY6DIiI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Oxzr8MqAjt1PIrJJlv0yxx" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PcKcCCbBZD6P4vbssp7MEL" Name="Name" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="616,510,105,26" Id="LWu6dJfG9ByOjKLhW0LMjS">
+                  <p:NodeReference LastCategoryFullName="System.Logging.ILogger" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="ILogger" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Log" />
+                  </p:NodeReference>
+                  <Pin Id="UmNJplkDTf0LiAiPEJOLTp" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BwIaCh2TyNyM9EqcbDfTuc" Name="Message" Kind="InputPin" DefaultValue="Processed file {file}" />
+                  <Pin Id="ERhv3qTs5SyNH3mBQ2QQfd" Name="Log Level" Kind="InputPin" DefaultValue="Debug" />
+                  <Pin Id="KFXhQF4WXFLQNtxNk8VJJW" Name="Args" Kind="InputPin" />
+                  <Pin Id="DjROZBAbm7kLFsVwB7JTIt" Name="Exception" Kind="InputPin" />
+                  <Pin Id="VKipa01SFg4N8qAOhBUM0g" Name="Event Id" Kind="InputPin" />
+                </Node>
+                <Node Bounds="676,480,39,19" Id="GOpwJzb6pknMXDVQJeB0mh">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Cons" />
+                  </p:NodeReference>
+                  <Pin Id="B8PsodNtXNAPZSXhMyhODW" Name="Input" Kind="InputPin" />
+                  <Pin Id="DtTqslWVhbiLuz1f802i6e" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="UvngBMXeqqwOEwHuAYqmX5" SlotId="MCLsFLfokZTNyeJVlZgRIP" Bounds="422,600" />
+            <ControlPoint Id="RtS4PkaEKy8NTIoKAm02dQ" Bounds="422,631" />
+            <Node Bounds="800,301,350,295" Id="PkmciYgYCvcLPYqLjkBHh8">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="FIKlobD4rAGNHucuNn2Ecb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="POrUIgcpJn0OJ39BSnLXz6" Name="Messages" Kind="InputPin" />
+              <Pin Id="NXJWmw41vE7QHbkvILO4y8" Name="Reset" Kind="InputPin" />
+              <Pin Id="CpmF0ey36AwMtpRlOX5CSC" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="SmGn3eouTKCPH6D7fNTDsr" Name="Result" Kind="OutputPin" />
+              <Patch Id="GFVyG7ykCdTMk4R04UsUJz" ManuallySortedPins="true">
+                <Patch Id="BiY8pxZWdgWLl41oE0Qqs5" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="QBHBJOYzjUDOwKlPxwZtkL" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="TyhW3iHI7PGOffSDjOJqRp" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="Gh4nbXfp1mxQBeTkYFBNCM" Name="Output" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="L1aMt1nrRZ4MlJkOX7hc98" Bounds="814,309" />
+                <ControlPoint Id="TSMHTy5lA9aLxeSRMpgoHB" Bounds="1027,511" />
+                <Node Bounds="812,331,62,26" Id="GUvCcleccSVPi0dP60YqZq">
+                  <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="EventPattern" />
+                    <Choice Kind="OperationCallFlag" Name="EventArgs" />
+                  </p:NodeReference>
+                  <Pin Id="AL1o4Upm0XENEz3YpDOkZj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DvRDcwO1xPnNqsSfaCfj6g" Name="Event Args" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="812,371,145,26" Id="IxlpV8hMYIHPg62pngy7yE">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommandCompletedEventArgs" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RoboCommandCompletedEventArgs" />
+                    <Choice Kind="OperationCallFlag" Name="Results" />
+                  </p:NodeReference>
+                  <Pin Id="KQFe6CWhKz1PwkTjGW9yXI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JexEo0IHns9My4PtFKX35j" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="NIHjBEjQ031NgCBTyZuobb" Name="Results" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="952,411,78,26" Id="O0B69bx0FgcNWupR6jaohp">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.Results.RoboCopyResults" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RoboCopyResults" />
+                    <Choice Kind="OperationCallFlag" Name="FilesStatistic" />
+                  </p:NodeReference>
+                  <Pin Id="EGV1cMiJyjuNvPCWFUkxLc" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="C967TWFv0AhP0lFc8xdQfO" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DgBu1Dp0zfnLtizlAmqtkh" Name="Files Statistic" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1025,461,55,19" Id="Kg5ZZYsCzldOvo0hUpOJzI">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="DjtxTrlq3W0MYPiIM2W1rp" Name="Input" Kind="InputPin" />
+                  <Pin Id="E6K0OszcyZmMN41grbeWAn" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1033,550,105,26" Id="T43PWS6go68Pr54ubPw7iw">
+                  <p:NodeReference LastCategoryFullName="System.Logging.ILogger" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="ILogger" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Log" />
+                  </p:NodeReference>
+                  <Pin Id="IUnfT6LoWnJPHpOqiV0Wuv" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DAb26jF3MWQMJpgg3Sda91" Name="Message" Kind="InputPin" DefaultValue="robocopy complete! {stats}" />
+                  <Pin Id="ThjEvwbd8srLZ1Jk71iL5q" Name="Log Level" Kind="InputPin" />
+                  <Pin Id="IbR7VpZR3gLOBmKBWeniSg" Name="Args" Kind="InputPin" />
+                  <Pin Id="A5vDNlk1d6WLOFAysYVsmu" Name="Exception" Kind="InputPin" />
+                  <Pin Id="EjmAnLbsGi8NlTh4nYN33G" Name="Event Id" Kind="InputPin" />
+                </Node>
+                <Node Bounds="1093,491,39,19" Id="EzjHqfTxpLqLa0l8jJ4GmB">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Cons" />
+                  </p:NodeReference>
+                  <Pin Id="GusJVVVy9SVOQ5iwKzAUrB" Name="Input" Kind="InputPin" />
+                  <Pin Id="VqRu1q3Yep2Mer0EcPN4yv" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="U9LxF6Jp5GrOedPKzNEbLG" SlotId="NsoPButWnKgOiE3Sry4mir" Bounds="802,620" />
+            <ControlPoint Id="V1kmlnISe3pMe7ljPwVxAI" Bounds="802,660" />
+            <Node Bounds="152,230,133,26" Id="BFuvvhwjjboPOhnZqo3k9b">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="CopyOptions" />
+              </p:NodeReference>
+              <Pin Id="UUAEMp29J05K9lznULOVE5" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NzRZtAuUrbNPbDrGoLTggC" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="PA74TkZIS7kOqKvz2KiITs" Name="Copy Options" Kind="OutputPin" />
+            </Node>
+            <Pad Id="THUHVGndzD8OzQUmaOgdkh" SlotId="SVePxnZCLXjNuuKfSDBMpY" Bounds="282,281" />
+            <Node Bounds="140,785,789,121" Id="MbpRDbjGYlLPmDV1TTurN7">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="Cw8dUiwGeb6MosXghaW1o6" Name="Force" Kind="InputPin" />
+              <Pin Id="E8SuENkLkJ7NqwDHCZxijl" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="RinQVfYP9IAM54yfQ1E8zY" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="PShNlerQuWELFt6HL3tHjL" ManuallySortedPins="true">
+                <Patch Id="B1ElU0w7a8vQFdeSOWm85U" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="JSdkumv37u7NaypHFUeBOx" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="152,856,62,26" Id="K4DB0yRUvs2OCiQAKUptoD">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CopyOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetSource" />
+                  </p:NodeReference>
+                  <Pin Id="Go3JDR7LzdENM3k0n9mMNM" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MrivHnGnfJVL4bNX1VXooJ" Name="Value" Kind="InputPin" />
+                  <Pin Id="N1ro9LL4iUTN78JUgW01BP" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="244,856,82,26" Id="PapyywW6wWdQGfR4LNCeEI">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CopyOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetDestination" />
+                  </p:NodeReference>
+                  <Pin Id="Bxs5qvNNcJmQCZlPv8c9pM" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QjaE71QbMwxPeNT2eGk1BV" Name="Value" Kind="InputPin" />
+                  <Pin Id="SfYisZc07aTOS32ZLpMT8Q" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="349,856,118,26" Id="RL04cR29kNzPYwnSzVZ3Vv">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetCopySubdirectories" />
+                  </p:NodeReference>
+                  <Pin Id="B0oUujb77N9PaZfvUp9k3z" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KlDHm3NI7C0OETyaXtSArT" Name="Value" Kind="InputPin" />
+                  <Pin Id="JIU0Fz8mrAyNVdJkdYi3fM" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="532,856,62,26" Id="EltppLeNaANPyOsT1v62xa">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CopyOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetMirror" />
+                  </p:NodeReference>
+                  <Pin Id="Rsvumdod6UQNJvXEDG76vs" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BvT1E0Rm04AQcm1Kc3NtS1" Name="Value" Kind="InputPin" />
+                  <Pin Id="KJH24XC9HLoMLtE0sLzOgY" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="616,856,106,26" Id="UOYREKqbcHkODv4QhE9k1a">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetUseUnbufferedIo" />
+                  </p:NodeReference>
+                  <Pin Id="El61VH2wBSjNEt5k8nM31w" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="G0Adg53lBjgLlyyomYXlqo" Name="Value" Kind="InputPin" />
+                  <Pin Id="AU4LwLo1RQwP83dYWdwIE0" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="763,860,154,26" Id="TeaBX2JpDKEP8QLWsEyPgG">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.CopyOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetMultiThreadedCopiesCount" />
+                  </p:NodeReference>
+                  <Pin Id="ESrDI1m5imaPPogYeDz3qO" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NJcDCbFlVZhOMyTf5VcncP" Name="Value" Kind="InputPin" />
+                  <Pin Id="MBBdKCmxPWaL75vJXsWndv" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="VJK6ocWbTgsPo9GNjzN9yx" Bounds="323,791" Alignment="Top" />
+              <ControlPoint Id="SIvigWndrgZNmmWYy6ebjS" Bounds="464,791" Alignment="Top" />
+              <ControlPoint Id="SedDXZ3m5c4QKTHHoLQGmt" Bounds="591,791" Alignment="Top" />
+              <ControlPoint Id="IGlr2HCLwv6QGoiYo8Kj3s" Bounds="719,791" Alignment="Top" />
+              <ControlPoint Id="Oo9OplYha0rP487usX3Dsf" Bounds="914,791" Alignment="Top" />
+              <ControlPoint Id="PrRxUSiwOE5NfbZ8hFBGId" Bounds="211,791" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="BFy0WZQsrXPNJ5VKF8dcLo" Bounds="211,749" />
+            <ControlPoint Id="I6Dxdiwr4VpLuBYxskyTfX" Bounds="323,749" />
+            <ControlPoint Id="UG1aYHuY9U3PHBIZCkvitw" Bounds="464,749" />
+            <ControlPoint Id="CcBPeNmTjfVLCAQN23pwor" Bounds="591,749" />
+            <ControlPoint Id="HMRnDki2gv4O2mZkqfIy4m" Bounds="719,749" />
+            <Pad Id="TjHFsWPSi0KMH7470XJkQ3" SlotId="SVePxnZCLXjNuuKfSDBMpY" Bounds="154,736" />
+            <Node Bounds="152,330,133,26" Id="O9uw77PCpzRLdLLPVl49cD">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="SelectionOptions" />
+              </p:NodeReference>
+              <Pin Id="ANV2k3yVRKFN2LWZt8PF5V" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GjycrBBMYv8NS1M0L6zWut" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SwLOf8kTUIlMwtggDqWYqg" Name="Selection Options" Kind="OutputPin" />
+            </Node>
+            <Pad Id="N1PcZjEgpCBOQxfuExvhjz" SlotId="CRuDmaCWg8XLLIBVxgqBEo" Bounds="282,381" />
+            <Pad Id="CUPWGiTxKmAOikqz304JZI" SlotId="CRuDmaCWg8XLLIBVxgqBEo" Bounds="1208,747" />
+            <Node Bounds="1194,833,258,86" Id="ElEHPZnXDOGMbhj3xJSGoR">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="CJJYI9CpSgKOEIwDYza3qW" Name="Force" Kind="InputPin" />
+              <Pin Id="EE1n5VdZxFtM9NY4K1T2xj" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Ei3lLYLqWqcOIh8Oy0k0rS" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="E2e3LkHJJ2oMV3dsVbgfTM" ManuallySortedPins="true">
+                <Patch Id="Qo4IvPfxB5wMp2xHd1QT3q" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="OJdWwWtylZoQKsJXxj9Xke" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="1325,856,115,26" Id="Jelu1qp0vwBOBUg7h16cZs">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.SelectionOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="SelectionOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetExcludeDirectories" />
+                  </p:NodeReference>
+                  <Pin Id="StdpDXWflcfPu5ddguLULl" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BzBbIEgJACPM2brB0RJJ3u" Name="Value" Kind="InputPin" />
+                  <Pin Id="RlNobDpNvIYQT8RVnPUhO0" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1206,856,86,26" Id="G5ZHHwM3frWOnjWoCKG7Yc">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.SelectionOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetExcludeFiles" />
+                  </p:NodeReference>
+                  <Pin Id="EuwqBgOw1kbPs9NJaF3M2k" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="SyNuxjKca2mQF9ZlZpkJfY" Name="Value" Kind="InputPin" />
+                  <Pin Id="QIDloH2yvlhP2FOCijo3KK" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="ElUb2Atk7CxO4ItdBWhOId" Bounds="1289,839" Alignment="Top" />
+              <ControlPoint Id="VTl6XRPJDMGMMkpmpL54sP" Bounds="1437,839" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="Icqtj2KTfJcMscGO8fd1GX" Bounds="1289,746" />
+            <ControlPoint Id="CX90iMttDUBMO8dcATxQSb" Bounds="1437,746" />
+            <Node Bounds="152,440,133,26" Id="S5W0qYGyKLiQM7n2cD6EsL">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="RetryOptions" />
+              </p:NodeReference>
+              <Pin Id="LvTIDVNmPeMOy06QC98zDF" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Fb14KyIaqXfO03fnOrMq4V" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="KKfFgStasJlLFUKvoHPR3U" Name="Retry Options" Kind="OutputPin" />
+            </Node>
+            <Pad Id="SoU5H1NcnpzQdo9hmKSgBp" SlotId="TfRX57Qu3CCM5HrtsFLj5c" Bounds="282,490" />
+            <Overlay Id="O5OGvdTtGiTO85P0zPAHlC" Name="Copy options" Bounds="46,679,927,232" />
+            <Overlay Id="RgQA58G9Jk3QXo1MREvpp5" Name="Selection options" Bounds="1098,682,469,291" />
+            <Pad Id="CU5EaFesPGyPyQB6BDXbZj" SlotId="TfRX57Qu3CCM5HrtsFLj5c" Bounds="1699,730" />
+            <Node Bounds="1685,833,223,86" Id="QWDSFzTMRy2NtpcX8Uypue">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="FZ1oJqiu5j8NCylgBPt1LD" Name="Force" Kind="InputPin" />
+              <Pin Id="MBd2NeJEF7BNSE7LJ8uUpb" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="CtQOS54I9C4NpC1Byomgmv" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="J93B3fECCHDM0wJdKZxBKP" ManuallySortedPins="true">
+                <Patch Id="R0Mx4unrzbYNu1qojp6scM" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="HIIrnrAMnhqM2OQyHAVqVM" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="1697,856,81,26" Id="RpQkLlIGJHIPBNav06BvrV">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.RetryOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetRetryCount" />
+                  </p:NodeReference>
+                  <Pin Id="JUoIyXWkXdHMyiO6FO42SU" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HZjW5NMam2MPQ91Yd36JQN" Name="Value" Kind="InputPin" />
+                  <Pin Id="OjTwiiKIJCDObKHDa4Hgr0" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1801,856,95,26" Id="LoNbDK2bMz8MJDDiYVCxbo">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.RetryOptions" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetRetryWaitTime" />
+                  </p:NodeReference>
+                  <Pin Id="NUTy4fxLx0ZLsYOZQAacT7" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="PPzbMumO9wGNEutI8cDV5A" Name="Value" Kind="InputPin" />
+                  <Pin Id="JwPAuyoDm96PABfKkuLyXU" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="SfvJUYcbBcaOzXoUmYIbyf" Bounds="1775,839" Alignment="Top" />
+              <ControlPoint Id="IM25sWNwhThO8P9pnP5BIr" Bounds="1893,839" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="VScwMlzT1jBPdFudt1Achm" Bounds="1775,730" />
+            <ControlPoint Id="OVnXZRxSN5tQd4lEnWTaZR" Bounds="1893,730" />
+            <Overlay Id="NFBiBDabDriNi0FnJECb05" Name="Retry options" Bounds="1604,675,412,282" />
+            <Pad Id="NCbGCfic3fCLVeamKFk893" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2120,740" />
+            <ControlPoint Id="JHESLoUtvtNLSjn8HYgwuo" Bounds="2142,700" />
+            <ControlPoint Id="DaKFsqWqe3vLsK3N8p0f70" Bounds="2164,720" />
+            <ControlPoint Id="Etq1Bxb725xLTCNKmCzkuJ" Bounds="2186,750" />
+            <ControlPoint Id="BdjQ9kqqWw4O85SDK60INF" Bounds="2253,760" />
+            <ControlPoint Id="GCtbOCwgOBXQLPKVhkIlfp" Bounds="914,750" />
+            <Node Bounds="2106,842,227,85" Id="Dgd9i94xbzwPJ7ab7Suu2C">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="AsyncTask" />
+              </p:NodeReference>
+              <Pin Id="UyZ9paD8COIOlFfzGimM3H" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="VlzgYNNaMf4LAvu9s7Uufr" Name="Trigger" Kind="InputPin" />
+              <Pin Id="IMh84ugUV26OkT5HY0uNkj" Name="Abort" Kind="InputPin" />
+              <Pin Id="SoF9pCxPMhEO81FRY9CL28" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="DhDvjkOOqSZMGdDl9vtmMn" Name="Result" Kind="OutputPin" />
+              <Pin Id="Cx2Qrnn619rLlaUvACAyQ3" Name="In Progress" Kind="OutputPin" />
+              <Patch Id="S5JhfwmkQ8ANbMzjWLToyH" ManuallySortedPins="true">
+                <Patch Id="Px3Ug3eu94xNGOyncVpD8L" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="II0V02QQYG1LiI2jJSOoBZ" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="C9FjMePUdX2O5JBdl2jdGm" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="JtAdOJ3xBKSPwKc9GKuenJ" Name="Output" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="M8ovCgQUJsWL50OOCwhjHj" Bounds="2209,850" />
+                <ControlPoint Id="J0kTZeAjoHPPbgkb2EcjYK" Bounds="2186,920" />
+                <Node Bounds="2118,867,71,26" Id="JtHQF9bCga1NTOfHiutb3R">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
+                    <Choice Kind="OperationCallFlag" Name="Start" />
+                  </p:NodeReference>
+                  <Pin Id="BlqaIpFMWZTNCYW8QQ73A1" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QhSj7cKNP6GLDZvYtM7ylA" Name="Domain" Kind="InputPin" />
+                  <Pin Id="SnsJOb1is4pNxjGiQPRDXc" Name="Username" Kind="InputPin" />
+                  <Pin Id="K4XyvO35MaqMMFRQNq12eq" Name="Password" Kind="InputPin" />
+                  <Pin Id="FYHRcCMQ61ONCKhOG2uzRv" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="GZENBvxrVJoNaR3UEG6FEy" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="2216,870,105,26" Id="SBfFBK3gOZNNQ8snzrGUMb">
+                  <p:NodeReference LastCategoryFullName="System.Logging.ILogger" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="ILogger" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Log" />
+                  </p:NodeReference>
+                  <Pin Id="Gx3HODQrx2tLnwsV50373Y" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BOwIDhHmW6LPaBlB3SbLBy" Name="Message" Kind="InputPin" DefaultValue="Started robocopy" />
+                  <Pin Id="HEP1ma3vnxUOmmwV83VW4O" Name="Log Level" Kind="InputPin" />
+                  <Pin Id="LLf5z74giSCMjoKPX2IGCm" Name="Args" Kind="InputPin" />
+                  <Pin Id="AV7hrIUyLdrMPs41lKvhsR" Name="Exception" Kind="InputPin" />
+                  <Pin Id="ONqXOPbEtL9P4OQv73XyAD" Name="Event Id" Kind="InputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="KmoDBXmDWTsMNS7p7FoVfO" Bounds="2330,970" />
+            <Node Bounds="1386,230,71,26" Id="Ek8QsFS2ddDMoWwqZ6fyCu">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
+                <Choice Kind="OperationCallFlag" Name="OnError" />
+              </p:NodeReference>
+              <Pin Id="JrtTFtdUUPJNyWTG83qocU" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EaaKxQ1Nu7cMPfFODjWdr9" Name="State Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="FDtVQrU9HXcM26PpsRXCyK" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1386,290,174,187" Id="UbPCLVCBoadNUbdI9xPztJ">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="KYvQfNWpqBsPfojQZTWVUp" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="T7UjAl4vMA3MuCwsQsVGi3" Name="Messages" Kind="InputPin" />
+              <Pin Id="T1wBaBe28iKNvHeiUsR7FY" Name="Reset" Kind="InputPin" />
+              <Pin Id="APWXjcHczRHNuaysd4uujy" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="TvCSRF6IAupQHeYZTqIqQo" Name="Result" Kind="OutputPin" />
+              <Patch Id="DNA7pBznJ76QADahMhjpBm" ManuallySortedPins="true">
+                <Patch Id="VLeGBXTo8lKNUJyUHRQ4V6" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MBjkDUnZ9SNNsiZtpJ2ccq" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="DarKB6W2ACdLd6GzR7MVDo" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="A508sCn6omWNk6rhvungYZ" Name="Output" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Unit" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                </Patch>
+                <ControlPoint Id="TVd8TrtBx7LOXDISDjGNNL" Bounds="1400,298" />
+                <ControlPoint Id="QSHKBdWCKyRNa3PbSR4kpF" Bounds="1400,470" />
+                <Node Bounds="1398,320,62,26" Id="FjHwvop8BDVLR9YOf1Pv7B">
+                  <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="EventPattern" />
+                    <Choice Kind="OperationCallFlag" Name="EventArgs" />
+                  </p:NodeReference>
+                  <Pin Id="Hnuo9HOTBfhMntmb8jJmtk" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="B29FiGllMj9MfU1ky51k6M" Name="Event Args" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1398,370,70,26" Id="IiofSSz1wFMLRGpcUvKPIo">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.ErrorEventArgs" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ErrorEventArgs" />
+                    <Choice Kind="OperationCallFlag" Name="Error" />
+                  </p:NodeReference>
+                  <Pin Id="JABA09vQtDELusAE1e6YBc" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Lzt8IfdBxwAMKLUSln3z3p" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="FKwAoapoOYsPxlADZiPIg6" Name="Error" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1443,430,105,26" Id="UjeYWdxn0TkQXLzeJ99GdM">
+                  <p:NodeReference LastCategoryFullName="System.Logging.ILogger" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="ILogger" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Log" />
+                  </p:NodeReference>
+                  <Pin Id="MO71c745COIN82QghbW0Uj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="GsbEuRoav3mQSgXZdjERqU" Name="Message" Kind="InputPin" DefaultValue="Mirroring complete!" />
+                  <Pin Id="EgjE8C2x9oOLLuoOC8WORC" Name="Log Level" Kind="InputPin" DefaultValue="Error" />
+                  <Pin Id="JobcMU6utQLP5JDahjAPT7" Name="Args" Kind="InputPin" />
+                  <Pin Id="OqvwsKxhRd0PxqX8IN9p3y" Name="Exception" Kind="InputPin" />
+                  <Pin Id="Hdo5tGbl9HYLI3thftl67Q" Name="Event Id" Kind="InputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="2469,851,95,80" Id="MQne2HloE75NLTQlNFamxt">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="J6JnVvtYhX9OZ7dAo8Wh3F" Name="Condition" Kind="InputPin" />
+              <Patch Id="ITapqc7glveOgzo4xdosPc" ManuallySortedPins="true">
+                <Patch Id="Seeg1JScxEzMhzv3XVDZxV" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="H67byvabGiKPi9smeMd8j1" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="2481,880,71,26" Id="TU7PoULgd6fOs5omVldzqo">
+                  <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
+                    <Choice Kind="OperationCallFlag" Name="Stop" />
+                  </p:NodeReference>
+                  <Pin Id="SdtcbgK2TV4NUdmfy7mUxX" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="N5Hj9bVd84FNxnI3yamrxY" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="QVORiNK2tiBQLH5szDei42" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2483,741" />
+            <ControlPoint Id="MgFnJIQ10ieLsiFiMpjErs" Bounds="2471,800" />
+            <Node Bounds="152,610,55,19" Id="C3g3KjgIkN4Pz2U8ridSrn">
+              <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToString" />
+              </p:NodeReference>
+              <Pin Id="C1qISm9kQ8KMd3JRoYWqoZ" Name="Input" Kind="InputPin" />
+              <Pin Id="RaqDOBm9oWBP6r37lJolKC" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="PdViOE2CvZmNKAeGvzfvSD" Bounds="154,650" />
+          </Canvas>
+          <Patch Id="Qe4nXrYQAODMN7K7LZzcbB" Name="Create" ParticipatingElements="KqK54RBrBRJOzmuAbWOJLt" />
+          <Slot Id="R6J1lTS91omOCjHRU1HC35" Name="Command">
+            <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="RoboSharp" LastDependency="RoboSharp.dll">
+              <Choice Kind="TypeFlag" Name="RoboCommand" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="UzNFU1Nblw6MbHqcfvxxHH" Ids="MncbkMHS2bBQbtBvoplRHE,QhsTX8jGqUDLBjKPHpm6Fz" />
+          <Link Id="RUV6zF1kmmnOyKQFxOoizH" Ids="MncbkMHS2bBQbtBvoplRHE,NhYV2GGNw22OSa7mZLUmT6" />
+          <Link Id="CRCQFhyweY6LwaTq5OGCLh" Ids="VRwEdHrf5uhQVBbdORzE1x,EiXHkn3rcyLLJSs7bVPAnD" IsHidden="true" />
+          <Link Id="CaM96ujeYFzO7AmwhGNbko" Ids="PpK5Lbt3cYKLAFbiEAnVsB,NIIlqJ5fGfvO57LA3fK0TJ" IsHidden="true" />
+          <Link Id="FmdqmOonibvMpr4kOqQcpt" Ids="S6osjcShbKfOsDaIITBrUs,LaPV1SyivUlOTd3xYCgr3H" />
+          <Link Id="MnzwuEkvYt4PIuueaoUQXi" Ids="EiXHkn3rcyLLJSs7bVPAnD,PS3eYkGJSWNPAWdgHo3LL2" />
+          <Link Id="KoOt485HlWBOYMs0Bk7Cwh" Ids="O19pzoD9Vm6NP61IhqXFfR,JDRfrDoyftcQZ6p5cL75Is" />
+          <Link Id="AmZzIr9HRqmLzdgvPeDYj6" Ids="LpSXkETHlf6OnNfBBwz57f,AdCSPjkWOtzLWqBhY6DIiI" />
+          <Link Id="ObFAvhy03ytOJ0FzcWb6AZ" Ids="PcKcCCbBZD6P4vbssp7MEL,PpK5Lbt3cYKLAFbiEAnVsB" />
+          <Slot Id="MCLsFLfokZTNyeJVlZgRIP" Name="On File Processed" />
+          <Link Id="FtAebdjuLBBNsfZ5GxADUZ" Ids="RDkgVXDg0tAMlfjNjYWVBa,UvngBMXeqqwOEwHuAYqmX5" />
+          <Link Id="RZvYRdaoNtxPFiv9AWmykF" Ids="UvngBMXeqqwOEwHuAYqmX5,RtS4PkaEKy8NTIoKAm02dQ" />
+          <Link Id="G56g5QMVXvsLagKOleCCQj" Ids="RtS4PkaEKy8NTIoKAm02dQ,UwFdnCHYYmFPP9892gmyJ0" IsHidden="true" />
+          <Patch Id="K39aXZBNsRyLURueDrvAky" Name="OnFileProcessed" ParticipatingElements="RZvYRdaoNtxPFiv9AWmykF">
+            <Pin Id="UwFdnCHYYmFPP9892gmyJ0" Name="File Processed" Kind="OutputPin" />
+          </Patch>
+          <Link Id="LeXNZsfQmEMNR9oBrl6eOc" Ids="TyhW3iHI7PGOffSDjOJqRp,L1aMt1nrRZ4MlJkOX7hc98" IsHidden="true" />
+          <Link Id="RmEWjzvr9WMNW902RCM6yN" Ids="TSMHTy5lA9aLxeSRMpgoHB,Gh4nbXfp1mxQBeTkYFBNCM" IsHidden="true" />
+          <Link Id="KBvaZVFB5SnNFtDezIGyzF" Ids="BXZqCcLBMi6O8WfcoAY2rW,POrUIgcpJn0OJ39BSnLXz6" />
+          <Link Id="AqRJkGW0YmtMI26q2REl8X" Ids="L1aMt1nrRZ4MlJkOX7hc98,AL1o4Upm0XENEz3YpDOkZj" />
+          <Link Id="UdNHI9sfFz3N6DBg0eePUM" Ids="DvRDcwO1xPnNqsSfaCfj6g,KQFe6CWhKz1PwkTjGW9yXI" />
+          <Link Id="A0Y9o1pClNwOcTxyjuFzuO" Ids="NIHjBEjQ031NgCBTyZuobb,EGV1cMiJyjuNvPCWFUkxLc" />
+          <Link Id="HhkXKojjibdPxP8Xm84D7U" Ids="DgBu1Dp0zfnLtizlAmqtkh,DjtxTrlq3W0MYPiIM2W1rp" />
+          <Link Id="VgxEmGMhRvpMhK2AkVSPt6" Ids="E6K0OszcyZmMN41grbeWAn,TSMHTy5lA9aLxeSRMpgoHB" />
+          <Slot Id="NsoPButWnKgOiE3Sry4mir" Name="On Command Completed" />
+          <Link Id="BVxNmZoKfPdO5zSnzcNdkf" Ids="SmGn3eouTKCPH6D7fNTDsr,U9LxF6Jp5GrOedPKzNEbLG" />
+          <Link Id="FwzyzshebavPda6BI1ihRb" Ids="U9LxF6Jp5GrOedPKzNEbLG,V1kmlnISe3pMe7ljPwVxAI" />
+          <Link Id="MMlrLHqa2ykLkc0N0LegRj" Ids="V1kmlnISe3pMe7ljPwVxAI,AEaNCPLJHO9NOrW9khp49X" IsHidden="true" />
+          <Patch Id="GoBC1KsdNNSOo9Ij5BCNP7" Name="OnCommandCompleted" ParticipatingElements="FwzyzshebavPda6BI1ihRb">
+            <Pin Id="AEaNCPLJHO9NOrW9khp49X" Name="On Command Completed" Kind="OutputPin" />
+          </Patch>
+          <Link Id="HLGZgIdhVCvNfAPc7AJSzB" Ids="MncbkMHS2bBQbtBvoplRHE,UUAEMp29J05K9lznULOVE5" />
+          <Slot Id="SVePxnZCLXjNuuKfSDBMpY" Name="Copy Options">
+            <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="RoboSharp" LastDependency="RoboSharp.dll">
+              <Choice Kind="TypeFlag" Name="CopyOptions" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="EwcbD7Z7beFN3a3MBfWiec" Ids="PA74TkZIS7kOqKvz2KiITs,THUHVGndzD8OzQUmaOgdkh" />
+          <Patch Id="GD2IC4Bnt6qMvOM5AhuRjS" Name="Update" ManuallySortedPins="true">
+            <Pin Id="HaZATb1qtNSNOXpZcathlG" Name="Source" Kind="InputPin" Summary="The source folder path where robocopy is copying files from" />
+            <Pin Id="Il2nhalpsxzOIzYvsTHS46" Name="Destination" Kind="InputPin" Summary="The destination folder path where robocopy is copying files to" />
+            <Pin Id="US5Syk9B7OuNi2jRB4Pnpi" Name="Copy Subdirectories" Kind="InputPin" Summary="Copies subdirectories. Note that this option excludes empty directories." />
+            <Pin Id="Fg1YPcUwz7uOHKxlzNVEAY" Name="Mirror" Kind="InputPin" Summary="[/MIR] Mirrors a directory tree (equivalent to CopySubdirectoriesIncludingEmpty plus Purge). Using this option with the CopySubdirectoriesIncludingEmpty overwrites the destination directory security settings." />
+            <Pin Id="Sys98furqnML6wMs2jeorW" Name="Use Unbuffered IO" Kind="InputPin" Summary="[/R:N] Specifies the number of retries N on failed copies (default is 0)." />
+            <Pin Id="VS9tDPBNgTlMWxwby0ykhj" Name="Exclude Files" Kind="InputPin" Summary="[/XF File File ...] Files should be separated by spaces. Excludes files that match the specified names or paths. Note that FileName can include wildcard characters (* and ?)." />
+            <Pin Id="VhGszqMSf2IPl8iAJ28SOs" Name="Exclude Directories" Kind="InputPin" Summary="[/XD Directory Directory ...] Directories should be separated by spaces. Excludes directories that match the specified names or paths." />
+            <Pin Id="Ggn3jZ9e63GO0phirRouo9" Name="Retry Count" Kind="InputPin" Summary="[/R:N] Specifies the number of retries N on failed copies (default is 0)." />
+            <Pin Id="VYS3vK9QgakQQ3PQvsfmOW" Name="Retry Wait Time" Kind="InputPin" Summary="[/W:N] Specifies the wait time N in seconds between retries (default is 30)." />
+            <Pin Id="DgluwZArBHILQNix2DcH58" Name="Multithreaded Copies Count" Kind="InputPin" Summary="[/MT:N] The default value of zero indicates that this feature is turned off. Creates multi-threaded copies with N threads. Must be an integer between 1 and 128. The MultiThreadedCopiesCount parameter cannot be used with the /IPG and EnableEfsRawMode parameters. Settings this value to anything other than 0 causes RoboCopy to force the following options: NoDirectoryList, IncludeFullPathNames" />
+            <Pin Id="UXkJQl118kROx8mmWKM07t" Name="Domain" Kind="InputPin" Visibility="Optional" />
+            <Pin Id="McTDcVhH0HLLOetFX5EgT4" Name="Username" Kind="InputPin" />
+            <Pin Id="PH8Z3etnIpbLwE2yTduE8b" Name="Password" Kind="InputPin" />
+            <Pin Id="IS8flstbrJ4PTw9L2478QD" Name="Start" Kind="InputPin" />
+            <Pin Id="VdrjGzsRNRaOwMBzSU7q3Q" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="Ku7QQ0j2rbLNaGg4tUna5G" Name="Stop" Kind="InputPin" />
+          </Patch>
+          <Link Id="U1VLuNB919pP8qCUm9wXt2" Ids="HaZATb1qtNSNOXpZcathlG,BFy0WZQsrXPNJ5VKF8dcLo" IsHidden="true" />
+          <Link Id="TSoyeOuC5wzQRnM8AKo9Tb" Ids="Il2nhalpsxzOIzYvsTHS46,I6Dxdiwr4VpLuBYxskyTfX" IsHidden="true" />
+          <Link Id="I6VaTeyJitAMN86PaetVoQ" Ids="I6Dxdiwr4VpLuBYxskyTfX,VJK6ocWbTgsPo9GNjzN9yx" />
+          <Link Id="MdzWZvtJc5nPtjTQqsskY0" Ids="N1ro9LL4iUTN78JUgW01BP,Bxs5qvNNcJmQCZlPv8c9pM" />
+          <Link Id="FtefcTe41AyMAA5Ivxj7Ce" Ids="SfYisZc07aTOS32ZLpMT8Q,B0oUujb77N9PaZfvUp9k3z" />
+          <Link Id="MxknkxNK3zqPippDOtYOCW" Ids="SIvigWndrgZNmmWYy6ebjS,KlDHm3NI7C0OETyaXtSArT" />
+          <Link Id="I9IhZFhDO1cPY3npcFO6Ee" Ids="UG1aYHuY9U3PHBIZCkvitw,SIvigWndrgZNmmWYy6ebjS" />
+          <Link Id="PCpfIU1GAqBOGEGuWjbQiQ" Ids="US5Syk9B7OuNi2jRB4Pnpi,UG1aYHuY9U3PHBIZCkvitw" IsHidden="true" />
+          <Link Id="Aeoo7pdXk98MuvCQvwlwFR" Ids="JIU0Fz8mrAyNVdJkdYi3fM,Rsvumdod6UQNJvXEDG76vs" />
+          <Link Id="KFBaiSkjC1JOlp7mHumXKG" Ids="SedDXZ3m5c4QKTHHoLQGmt,BvT1E0Rm04AQcm1Kc3NtS1" />
+          <Link Id="GKZenzJ6u7oPiTfzsMHJ9B" Ids="CcBPeNmTjfVLCAQN23pwor,SedDXZ3m5c4QKTHHoLQGmt" />
+          <Link Id="FzmQOfv3pcANT6w93raTCU" Ids="Fg1YPcUwz7uOHKxlzNVEAY,CcBPeNmTjfVLCAQN23pwor" IsHidden="true" />
+          <Link Id="E23cD1svrh7LCCi1FrlOsm" Ids="KJH24XC9HLoMLtE0sLzOgY,El61VH2wBSjNEt5k8nM31w" />
+          <Link Id="JoqafnJGrBhMJLCiL0y9Io" Ids="IGlr2HCLwv6QGoiYo8Kj3s,G0Adg53lBjgLlyyomYXlqo" />
+          <Link Id="Q2XqA8QxFJULNWZHOqsUUV" Ids="HMRnDki2gv4O2mZkqfIy4m,IGlr2HCLwv6QGoiYo8Kj3s" />
+          <Link Id="C548d9cERHYNoJgpszLljw" Ids="Sys98furqnML6wMs2jeorW,HMRnDki2gv4O2mZkqfIy4m" IsHidden="true" />
+          <Link Id="MWCsQULHCNaMyaLZRq302z" Ids="TjHFsWPSi0KMH7470XJkQ3,Go3JDR7LzdENM3k0n9mMNM" />
+          <Link Id="SrUCjQmSvYoPNNDyvsw0d2" Ids="NzRZtAuUrbNPbDrGoLTggC,ANV2k3yVRKFN2LWZt8PF5V" />
+          <Slot Id="CRuDmaCWg8XLLIBVxgqBEo" Name="Selection Options">
+            <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="RoboSharp" LastDependency="RoboSharp.dll">
+              <Choice Kind="TypeFlag" Name="SelectionOptions" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="JASn4VQ7yi1QEOXT8NQiTN" Ids="SwLOf8kTUIlMwtggDqWYqg,N1PcZjEgpCBOQxfuExvhjz" />
+          <Link Id="VxB3pJde89ML3Uf1F56of5" Ids="CUPWGiTxKmAOikqz304JZI,EuwqBgOw1kbPs9NJaF3M2k" />
+          <Link Id="LroHJZO6TaDNhvRa3SUAXX" Ids="QIDloH2yvlhP2FOCijo3KK,StdpDXWflcfPu5ddguLULl" />
+          <Link Id="F31pVbwB1lfNltciWbTy9S" Ids="VS9tDPBNgTlMWxwby0ykhj,Icqtj2KTfJcMscGO8fd1GX" IsHidden="true" />
+          <Link Id="AGwjCK5I3u2QB946VGHlTr" Ids="VhGszqMSf2IPl8iAJ28SOs,CX90iMttDUBMO8dcATxQSb" IsHidden="true" />
+          <Link Id="B1DfVfMLMgWQNIqWxo44Kn" Ids="GjycrBBMYv8NS1M0L6zWut,LvTIDVNmPeMOy06QC98zDF" />
+          <Link Id="VuE8QsyrnmwN7M20vOuqr4" Ids="Fb14KyIaqXfO03fnOrMq4V,I8bNTWUwtNuQI4ijPObXRN" />
+          <Slot Id="TfRX57Qu3CCM5HrtsFLj5c" Name="Retry Options">
+            <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="RoboSharp" LastDependency="RoboSharp.dll">
+              <Choice Kind="TypeFlag" Name="RetryOptions" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="EylGr1jVQeYLudXrCy1JpP" Ids="KKfFgStasJlLFUKvoHPR3U,SoU5H1NcnpzQdo9hmKSgBp" />
+          <Link Id="HnOvL3XpshQLRG3fLqThvk" Ids="CU5EaFesPGyPyQB6BDXbZj,JUoIyXWkXdHMyiO6FO42SU" />
+          <Link Id="V2mXjldKwu9M4mIlXCJECy" Ids="SfvJUYcbBcaOzXoUmYIbyf,HZjW5NMam2MPQ91Yd36JQN" />
+          <Link Id="RaPyBj4NmTaNNYAkagvgPm" Ids="VScwMlzT1jBPdFudt1Achm,SfvJUYcbBcaOzXoUmYIbyf" />
+          <Link Id="UZW7TYO24lCOM4PiYuPNQQ" Ids="Ggn3jZ9e63GO0phirRouo9,VScwMlzT1jBPdFudt1Achm" IsHidden="true" />
+          <Link Id="V5X7oWWVwVBLnftOMb7POE" Ids="OjTwiiKIJCDObKHDa4Hgr0,NUTy4fxLx0ZLsYOZQAacT7" />
+          <Link Id="G9KjvWd43UEOqHNMrr5ILV" Ids="IM25sWNwhThO8P9pnP5BIr,PPzbMumO9wGNEutI8cDV5A" />
+          <Link Id="Q3hc5x3hkuOLjL8JbIj2zC" Ids="OVnXZRxSN5tQd4lEnWTaZR,IM25sWNwhThO8P9pnP5BIr" />
+          <Link Id="OGz4NnTywOrLuIZRUEfgzl" Ids="VYS3vK9QgakQQ3PQvsfmOW,OVnXZRxSN5tQd4lEnWTaZR" IsHidden="true" />
+          <Link Id="AAETQTa2UcmNarceOndubF" Ids="Icqtj2KTfJcMscGO8fd1GX,ElUb2Atk7CxO4ItdBWhOId" />
+          <Link Id="TzhA8C16BtaNwhQg12c0MH" Ids="ElUb2Atk7CxO4ItdBWhOId,SyNuxjKca2mQF9ZlZpkJfY" />
+          <Link Id="PylE0gYrEtuPhqMdiaTJ68" Ids="CX90iMttDUBMO8dcATxQSb,VTl6XRPJDMGMMkpmpL54sP" />
+          <Link Id="VC8GL6iDYBlM4EqOV0zMZS" Ids="VTl6XRPJDMGMMkpmpL54sP,BzBbIEgJACPM2brB0RJJ3u" />
+          <Link Id="DkqjUjpAKrDNDh3wzYYVSd" Ids="PcKcCCbBZD6P4vbssp7MEL,B8PsodNtXNAPZSXhMyhODW" />
+          <Link Id="LXbasHz5jRPM8lCkUoz5RM" Ids="DtTqslWVhbiLuz1f802i6e,KFXhQF4WXFLQNtxNk8VJJW" />
+          <Link Id="BFv3Mf2GzfpLmW3LWqUAcL" Ids="NCbGCfic3fCLVeamKFk893,BlqaIpFMWZTNCYW8QQ73A1" />
+          <Link Id="UHi0NdrdlV4N5oWd4VN1Jk" Ids="JHESLoUtvtNLSjn8HYgwuo,QhSj7cKNP6GLDZvYtM7ylA" />
+          <Link Id="Njy2Lliy64bPlJ1GeeaEF5" Ids="UXkJQl118kROx8mmWKM07t,JHESLoUtvtNLSjn8HYgwuo" IsHidden="true" />
+          <Link Id="ARqfLYDtljzManqNkGnFbQ" Ids="DaKFsqWqe3vLsK3N8p0f70,SnsJOb1is4pNxjGiQPRDXc" />
+          <Link Id="UHX3ldixEnQMrD229fSmvL" Ids="McTDcVhH0HLLOetFX5EgT4,DaKFsqWqe3vLsK3N8p0f70" IsHidden="true" />
+          <Link Id="CSObqsghTvfM5jJ9jHZaT7" Ids="Etq1Bxb725xLTCNKmCzkuJ,K4XyvO35MaqMMFRQNq12eq" />
+          <Link Id="S963KtrAVotNyEV9RWSGhw" Ids="PH8Z3etnIpbLwE2yTduE8b,Etq1Bxb725xLTCNKmCzkuJ" IsHidden="true" />
+          <Link Id="CzJP42tGTO7LDTO9Sjv6nK" Ids="IS8flstbrJ4PTw9L2478QD,BdjQ9kqqWw4O85SDK60INF" IsHidden="true" />
+          <Link Id="EMIb1UBWqABLlAKzBkrHfN" Ids="AU4LwLo1RQwP83dYWdwIE0,ESrDI1m5imaPPogYeDz3qO" />
+          <Link Id="QEoy2snYmYsPNZlI3X7nlE" Ids="Oo9OplYha0rP487usX3Dsf,NJcDCbFlVZhOMyTf5VcncP" />
+          <Link Id="A9FO2fEDLJhLwmXhfZCjf9" Ids="GCtbOCwgOBXQLPKVhkIlfp,Oo9OplYha0rP487usX3Dsf" />
+          <Link Id="IBFTMr6h4n9M5GbUE1zbQX" Ids="DgluwZArBHILQNix2DcH58,GCtbOCwgOBXQLPKVhkIlfp" IsHidden="true" />
+          <Link Id="UBjL2husthzPUDPKz6ssgU" Ids="VJK6ocWbTgsPo9GNjzN9yx,QjaE71QbMwxPeNT2eGk1BV" />
+          <Link Id="D2g4C8SNJzTL0rtDUEPjHc" Ids="BFy0WZQsrXPNJ5VKF8dcLo,PrRxUSiwOE5NfbZ8hFBGId" />
+          <Link Id="FZnhLwHF2tAMDhv9u8rm5F" Ids="PrRxUSiwOE5NfbZ8hFBGId,MrivHnGnfJVL4bNX1VXooJ" />
+          <Link Id="Dke4wZnjJo6PYb4TacLZwI" Ids="C9FjMePUdX2O5JBdl2jdGm,M8ovCgQUJsWL50OOCwhjHj" IsHidden="true" />
+          <Link Id="AwmPVoqBRK6NPCEPsPFD8i" Ids="J0kTZeAjoHPPbgkb2EcjYK,JtAdOJ3xBKSPwKc9GKuenJ" IsHidden="true" />
+          <Link Id="VjJ4rM3HYzbPBmxkmKjmQM" Ids="GZENBvxrVJoNaR3UEG6FEy,J0kTZeAjoHPPbgkb2EcjYK" />
+          <Link Id="ChlyqHbtPEvNU0dIbyphjt" Ids="BdjQ9kqqWw4O85SDK60INF,VlzgYNNaMf4LAvu9s7Uufr" />
+          <Link Id="ExSmPkshPZENWxMBUzd353" Ids="Cx2Qrnn619rLlaUvACAyQ3,KmoDBXmDWTsMNS7p7FoVfO" />
+          <Link Id="KplRHRz5fBNNAIJQ0iSeZe" Ids="KmoDBXmDWTsMNS7p7FoVfO,VdrjGzsRNRaOwMBzSU7q3Q" IsHidden="true" />
+          <Link Id="BWrUlLVkLEXPFiXOZ4gYCe" Ids="MncbkMHS2bBQbtBvoplRHE,JrtTFtdUUPJNyWTG83qocU" />
+          <Link Id="SjAJYtBhKNWLiIUTW1Zguc" Ids="DarKB6W2ACdLd6GzR7MVDo,TVd8TrtBx7LOXDISDjGNNL" IsHidden="true" />
+          <Link Id="OfPxrGbkrvoQPFTVg73aLJ" Ids="QSHKBdWCKyRNa3PbSR4kpF,A508sCn6omWNk6rhvungYZ" IsHidden="true" />
+          <Link Id="RhtBMjRTvpIN9MO98Zt6Zi" Ids="FDtVQrU9HXcM26PpsRXCyK,T7UjAl4vMA3MuCwsQsVGi3" />
+          <Link Id="Ld5EUTTOUryN69m6LEuN3K" Ids="TVd8TrtBx7LOXDISDjGNNL,Hnuo9HOTBfhMntmb8jJmtk" />
+          <Link Id="BdwWVIbrRi3NlBQ7naGnCJ" Ids="B29FiGllMj9MfU1ky51k6M,JABA09vQtDELusAE1e6YBc" />
+          <Link Id="H3cSxxpUNEPOsNcIgwZMc3" Ids="FKwAoapoOYsPxlADZiPIg6,GsbEuRoav3mQSgXZdjERqU" />
+          <Link Id="Qf7j3NUMz9vMB5usbFJKqh" Ids="E6K0OszcyZmMN41grbeWAn,GusJVVVy9SVOQ5iwKzAUrB" />
+          <Link Id="LrAI3GgM9C1OEB9C2jJcIk" Ids="VqRu1q3Yep2Mer0EcPN4yv,IbR7VpZR3gLOBmKBWeniSg" />
+          <Link Id="H0GKjRP0Ml4MlPwO2gry9A" Ids="QVORiNK2tiBQLH5szDei42,SdtcbgK2TV4NUdmfy7mUxX" />
+          <Link Id="T4iS0GEg9HlOkfWmLtqC7B" Ids="MgFnJIQ10ieLsiFiMpjErs,J6JnVvtYhX9OZ7dAo8Wh3F" />
+          <Link Id="BpG5nBpVfX2OxkEqn0AZOR" Ids="Ku7QQ0j2rbLNaGg4tUna5G,MgFnJIQ10ieLsiFiMpjErs" IsHidden="true" />
+          <Link Id="D4rGZlfuAI9OeNxvftHMIF" Ids="I8bNTWUwtNuQI4ijPObXRN,C1qISm9kQ8KMd3JRoYWqoZ" />
+          <Link Id="AVnafOVbILDLSGowgq29jJ" Ids="RaqDOBm9oWBP6r37lJolKC,PdViOE2CvZmNKAeGvzfvSD" />
+          <Link Id="KZIyoN5rBCrQU49LLO2bHN" Ids="PdViOE2CvZmNKAeGvzfvSD,TYnuo8YUtE3PeVtx3x7xME" IsHidden="true" />
+          <Patch Id="HXsGh3jdi6HMhOWGbV0EqG" Name="Command" ParticipatingElements="C3g3KjgIkN4Pz2U8ridSrn">
+            <Pin Id="TYnuo8YUtE3PeVtx3x7xME" Name="Command" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="VXzL3IOZOwVNxoxS8oYkP7">
+            <Fragment Id="KZSJNIhxSbtOXtpyRf5qIR" Patch="Qe4nXrYQAODMN7K7LZzcbB" Enabled="true" />
+            <Fragment Id="JMKN4GAr9guNDEkkXqDJ2j" Patch="K39aXZBNsRyLURueDrvAky" Enabled="true" />
+            <Fragment Id="VF3yR61bgywN6TZpOeVTVN" Patch="GoBC1KsdNNSOo9Ij5BCNP7" Enabled="true" />
+            <Fragment Id="FZgJN3Me09EN4BNEVIE4xA" Patch="GD2IC4Bnt6qMvOM5AhuRjS" Enabled="true" />
+            <Fragment Id="EmdRUJlPO09N50XsX3Bxg7" Patch="HXsGh3jdi6HMhOWGbV0EqG" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="UD9v9IRD10oPwZtgNSzTs9">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="GVlAT65TkmJQCS8TvAmOqg">
+        <Canvas Id="GaG7L16nIQ6PhTJomVP0SR" CanvasType="Group" />
+        <Patch Id="MdD2sNn8UY7LhqFQkQAWQe" Name="Create" />
+        <Patch Id="EesO9kStCLWN8hFt0ann3H" Name="Update" />
+        <ProcessDefinition Id="TNjUoj2bUHfLwy4rF7giXX">
+          <Fragment Id="OAAHsm0jIiEN7nTuGmAE2d" Patch="MdD2sNn8UY7LhqFQkQAWQe" Enabled="true" />
+          <Fragment Id="IZagfyowB4uQVSbhUJlK32" Patch="EesO9kStCLWN8hFt0ann3H" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="RcFItZonxREOURrc9PBPhy" Location="RoboSharp" Version="1.6.0" />
+</Document>
