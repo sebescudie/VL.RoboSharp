@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IMt6N4EWPh3MoJZ1ULqblc" LanguageVersion="2025.7.0" Version="0.128">
-  <NugetDependency Id="A0OoKUcFYR5NHQ6LXkYqlL" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IMt6N4EWPh3MoJZ1ULqblc" LanguageVersion="2025.7.1-0106-gc0edd1f65b" Version="0.128">
+  <NugetDependency Id="A0OoKUcFYR5NHQ6LXkYqlL" Location="VL.CoreLib" Version="2025.7.1-0106-gc0edd1f65b" />
   <Patch Id="R5CVJx7gYz6M6fMFs5hPIs">
     <Canvas Id="VITthTIkg57Op6saMcKCPM" DefaultCategory="RoboSharp" CanvasType="FullCategory">
       <!--
@@ -394,13 +394,13 @@
             <ControlPoint Id="VScwMlzT1jBPdFudt1Achm" Bounds="1775,730" />
             <ControlPoint Id="OVnXZRxSN5tQd4lEnWTaZR" Bounds="1893,730" />
             <Overlay Id="NFBiBDabDriNi0FnJECb05" Name="Retry options" Bounds="1604,675,412,282" />
-            <Pad Id="NCbGCfic3fCLVeamKFk893" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2120,740" />
-            <ControlPoint Id="JHESLoUtvtNLSjn8HYgwuo" Bounds="2142,700" />
-            <ControlPoint Id="DaKFsqWqe3vLsK3N8p0f70" Bounds="2164,720" />
-            <ControlPoint Id="Etq1Bxb725xLTCNKmCzkuJ" Bounds="2186,750" />
-            <ControlPoint Id="BdjQ9kqqWw4O85SDK60INF" Bounds="2253,760" />
+            <Pad Id="NCbGCfic3fCLVeamKFk893" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2092,731" />
+            <ControlPoint Id="JHESLoUtvtNLSjn8HYgwuo" Bounds="2217,700" />
+            <ControlPoint Id="DaKFsqWqe3vLsK3N8p0f70" Bounds="2239,720" />
+            <ControlPoint Id="Etq1Bxb725xLTCNKmCzkuJ" Bounds="2261,750" />
+            <ControlPoint Id="BdjQ9kqqWw4O85SDK60INF" Bounds="2183,681" />
             <ControlPoint Id="GCtbOCwgOBXQLPKVhkIlfp" Bounds="914,750" />
-            <Node Bounds="2106,842,227,85" Id="Dgd9i94xbzwPJ7ab7Suu2C">
+            <Node Bounds="2181,842,227,85" Id="Dgd9i94xbzwPJ7ab7Suu2C">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="AsyncTask" />
@@ -417,9 +417,9 @@
                   <Pin Id="C9FjMePUdX2O5JBdl2jdGm" Name="Input 1" Kind="InputPin" />
                   <Pin Id="JtAdOJ3xBKSPwKc9GKuenJ" Name="Output" Kind="OutputPin" />
                 </Patch>
-                <ControlPoint Id="M8ovCgQUJsWL50OOCwhjHj" Bounds="2209,850" />
-                <ControlPoint Id="J0kTZeAjoHPPbgkb2EcjYK" Bounds="2186,920" />
-                <Node Bounds="2118,867,71,26" Id="JtHQF9bCga1NTOfHiutb3R">
+                <ControlPoint Id="M8ovCgQUJsWL50OOCwhjHj" Bounds="2284,850" />
+                <ControlPoint Id="J0kTZeAjoHPPbgkb2EcjYK" Bounds="2261,920" />
+                <Node Bounds="2193,867,71,26" Id="JtHQF9bCga1NTOfHiutb3R">
                   <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
@@ -432,7 +432,7 @@
                   <Pin Id="FYHRcCMQ61ONCKhOG2uzRv" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="GZENBvxrVJoNaR3UEG6FEy" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="2216,870,105,26" Id="SBfFBK3gOZNNQ8snzrGUMb">
+                <Node Bounds="2291,870,105,26" Id="SBfFBK3gOZNNQ8snzrGUMb">
                   <p:NodeReference LastCategoryFullName="System.Logging.ILogger" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="MutableInterfaceType" Name="ILogger" NeedsToBeDirectParent="true" />
@@ -447,7 +447,7 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="KmoDBXmDWTsMNS7p7FoVfO" Bounds="2330,970" />
+            <ControlPoint Id="KmoDBXmDWTsMNS7p7FoVfO" Bounds="2405,970" />
             <Node Bounds="1386,230,71,26" Id="Ek8QsFS2ddDMoWwqZ6fyCu">
               <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -515,7 +515,7 @@
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="2469,851,95,80" Id="MQne2HloE75NLTQlNFamxt">
+            <Node Bounds="2589,851,95,80" Id="MQne2HloE75NLTQlNFamxt">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -525,7 +525,7 @@
               <Patch Id="ITapqc7glveOgzo4xdosPc" ManuallySortedPins="true">
                 <Patch Id="Seeg1JScxEzMhzv3XVDZxV" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="H67byvabGiKPi9smeMd8j1" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="2481,880,71,26" Id="TU7PoULgd6fOs5omVldzqo">
+                <Node Bounds="2601,880,71,26" Id="TU7PoULgd6fOs5omVldzqo">
                   <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
@@ -536,8 +536,8 @@
                 </Node>
               </Patch>
             </Node>
-            <Pad Id="QVORiNK2tiBQLH5szDei42" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2483,741" />
-            <ControlPoint Id="MgFnJIQ10ieLsiFiMpjErs" Bounds="2471,800" />
+            <Pad Id="QVORiNK2tiBQLH5szDei42" SlotId="R6J1lTS91omOCjHRU1HC35" Bounds="2603,741" />
+            <ControlPoint Id="MgFnJIQ10ieLsiFiMpjErs" Bounds="2591,800" />
             <Node Bounds="152,610,55,19" Id="C3g3KjgIkN4Pz2U8ridSrn">
               <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -547,6 +547,26 @@
               <Pin Id="RaqDOBm9oWBP6r37lJolKC" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="PdViOE2CvZmNKAeGvzfvSD" Bounds="154,650" />
+            <Node Bounds="2181,800,57,19" Id="UXhlPd5fuWIPvRwV0f4NMG">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ANDNOT" />
+              </p:NodeReference>
+              <Pin Id="RrtKkL5jwOJNBQ8YmfsSPH" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MoY02IrZtuDPRMDy0i6AIR" Name="Input 2" Kind="InputPin" />
+              <Pin Id="KUKYEC6dUe3PuXqUqVAAKh" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="2090,760,71,26" Id="F5J0OCUqdfgOARcGKkDjlP">
+              <p:NodeReference LastCategoryFullName="RoboSharp.RoboCommand" LastDependency="RoboSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="RoboCommand" />
+                <Choice Kind="OperationCallFlag" Name="IsRunning" />
+              </p:NodeReference>
+              <Pin Id="VEy5IsdZtjWNPeHG6qeeKS" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FcDeo6L8w9yOyMRxZMYvNC" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="RlcKsKUAsGpQDGz8UPEyXQ" Name="Is Running" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Ubt7D3W1TH2NO2LcOF6srV" Bounds="2092,832" />
           </Canvas>
           <Patch Id="Qe4nXrYQAODMN7K7LZzcbB" Name="Create" ParticipatingElements="KqK54RBrBRJOzmuAbWOJLt" />
           <Slot Id="R6J1lTS91omOCjHRU1HC35" Name="Command">
@@ -660,7 +680,6 @@
           <Link Id="VC8GL6iDYBlM4EqOV0zMZS" Ids="VTl6XRPJDMGMMkpmpL54sP,BzBbIEgJACPM2brB0RJJ3u" />
           <Link Id="DkqjUjpAKrDNDh3wzYYVSd" Ids="PcKcCCbBZD6P4vbssp7MEL,B8PsodNtXNAPZSXhMyhODW" />
           <Link Id="LXbasHz5jRPM8lCkUoz5RM" Ids="DtTqslWVhbiLuz1f802i6e,KFXhQF4WXFLQNtxNk8VJJW" />
-          <Link Id="BFv3Mf2GzfpLmW3LWqUAcL" Ids="NCbGCfic3fCLVeamKFk893,BlqaIpFMWZTNCYW8QQ73A1" />
           <Link Id="UHi0NdrdlV4N5oWd4VN1Jk" Ids="JHESLoUtvtNLSjn8HYgwuo,QhSj7cKNP6GLDZvYtM7ylA" />
           <Link Id="Njy2Lliy64bPlJ1GeeaEF5" Ids="UXkJQl118kROx8mmWKM07t,JHESLoUtvtNLSjn8HYgwuo" IsHidden="true" />
           <Link Id="ARqfLYDtljzManqNkGnFbQ" Ids="DaKFsqWqe3vLsK3N8p0f70,SnsJOb1is4pNxjGiQPRDXc" />
@@ -678,7 +697,6 @@
           <Link Id="Dke4wZnjJo6PYb4TacLZwI" Ids="C9FjMePUdX2O5JBdl2jdGm,M8ovCgQUJsWL50OOCwhjHj" IsHidden="true" />
           <Link Id="AwmPVoqBRK6NPCEPsPFD8i" Ids="J0kTZeAjoHPPbgkb2EcjYK,JtAdOJ3xBKSPwKc9GKuenJ" IsHidden="true" />
           <Link Id="VjJ4rM3HYzbPBmxkmKjmQM" Ids="GZENBvxrVJoNaR3UEG6FEy,J0kTZeAjoHPPbgkb2EcjYK" />
-          <Link Id="ChlyqHbtPEvNU0dIbyphjt" Ids="BdjQ9kqqWw4O85SDK60INF,VlzgYNNaMf4LAvu9s7Uufr" />
           <Link Id="ExSmPkshPZENWxMBUzd353" Ids="Cx2Qrnn619rLlaUvACAyQ3,KmoDBXmDWTsMNS7p7FoVfO" />
           <Link Id="KplRHRz5fBNNAIJQ0iSeZe" Ids="KmoDBXmDWTsMNS7p7FoVfO,VdrjGzsRNRaOwMBzSU7q3Q" IsHidden="true" />
           <Link Id="BWrUlLVkLEXPFiXOZ4gYCe" Ids="MncbkMHS2bBQbtBvoplRHE,JrtTFtdUUPJNyWTG83qocU" />
@@ -706,6 +724,11 @@
             <Fragment Id="FZgJN3Me09EN4BNEVIE4xA" Patch="GD2IC4Bnt6qMvOM5AhuRjS" Enabled="true" />
             <Fragment Id="EmdRUJlPO09N50XsX3Bxg7" Patch="HXsGh3jdi6HMhOWGbV0EqG" Enabled="true" />
           </ProcessDefinition>
+          <Link Id="N8JoCUb2XICNISC7PtPNlV" Ids="NCbGCfic3fCLVeamKFk893,VEy5IsdZtjWNPeHG6qeeKS" />
+          <Link Id="U41aDFmZe6PN23hIDeyRAF" Ids="BdjQ9kqqWw4O85SDK60INF,RrtKkL5jwOJNBQ8YmfsSPH" />
+          <Link Id="T4432PqDotgMmVXgIkoD0d" Ids="RlcKsKUAsGpQDGz8UPEyXQ,MoY02IrZtuDPRMDy0i6AIR" />
+          <Link Id="BFDW1xqe48KPVQCh8NCCxs" Ids="KUKYEC6dUe3PuXqUqVAAKh,VlzgYNNaMf4LAvu9s7Uufr" />
+          <Link Id="MTfQfLmZ9eRO6HBrpb4VpC" Ids="FcDeo6L8w9yOyMRxZMYvNC,Ubt7D3W1TH2NO2LcOF6srV,BlqaIpFMWZTNCYW8QQ73A1" />
         </Patch>
       </Node>
     </Canvas>
